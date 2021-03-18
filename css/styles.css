@@ -1,22 +1,25 @@
 /* ---- Base Element Styles ---- */
 
+html {
+    color:rgb(100, 26, 134);
+    font-size: 5px;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
 * {
     box-sizing: border-box;
 }
 body {
-    background-color: palegreen;
+    background-color: rgb(246, 248, 97);
     max-width: 100%;
     margin: 0 auto;
+    font-size: 15px;
+    line-height: 25px;
     }
-.intro:first-letter {
-    float: left;
-    font-size: 50px;
-    color:yellow;
-    padding: 5px 10px;
-    background:palegreen;
-    margin: 10px 10px 0 0;
-    border-radius: 5px;
-    line-height: 1;
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
 }
 
 h1 {
@@ -24,48 +27,125 @@ h1 {
 }
 
 /* ----Layout Containers ----*/
+.header-container {
+    background: 15px solid #6de46d   
+}
 
+.footer-container {
+    background: 15px solid #c0e2c0;
+}
 .container {
     padding-left: 1em;
     padding-right: 1em;
 }
 
+.title {
+    color:violet
+}
 
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: square;
+}
 
+nav a {
+    display:block;
+    margin-bottom: 8px;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: violet;
+    font-weight: bold;
+    color:wheat;
+    background: yellowgreen;
+}
 
-.main-footer {
+nav a:hover,
+nav a:visited {
+    color:thistle;
+}
+
+nav a:hover {
+    text-decoration: turquoise italic;
+}
+
+.main {
+    padding: 25px 0;
+}
+
+.main article h1 {
+    font-size:2.5em;
+}
+
+.footer-container {
     text-align: center;
     background:burlywood;
-    padding: 2em 0;
+    padding: 15px 0;
 }
 
 
 /* ----Media Queries---- */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 450px) {
+
+    nav a {
+        float: left;
+        width: 25%;
+        margin: 0 0 0 5%;
+        padding: 20px 1%;
+        margin-bottom: 0;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (min-width: 720px),
+       only screen and (min-width: 700px) and (orientation: landscape) {
+    
     .title {
         float: left;
         font-size: 1.5em
     }
 
-    
-    #header {
-        float: center;
-        width: 50%;
-        margin-top: 10%;
+    nav {
+        float: right;
+        width: 60%;
+    }
+
+    nav a {
+        padding: 10px 1%;
+    }
+
+    .main article {
+        float: left;
+        width: 55%;
     }
 }
 
-
-@media (min-width: 720px) {
-    .wrap {
-        min-height: calc(100vh-89px);
-    }
-    
-    .container {
-        width: 70%;
-        max-width: 1000px;
-        margin: 0 auto; 
+@media only screen and (min-width:1000px) {
+    .wrapper {
+        width: 990px;
+        margin: 0 auto;
     }
 
+    .title {
+        font-size: 2em;
+    }
+
+    nav a {
+        padding: 25px 1%;
+    }
+}
+ 
+/* ----Clearfix---- */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
 }

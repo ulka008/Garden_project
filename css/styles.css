@@ -1,8 +1,8 @@
 /* ---- Base Element Styles ---- */
 
 html {
-    color:rgb(100, 26, 134);
-    font-size: 5px;
+    color: black;
+    font-size: first-letter 20px;
     line-height: 1.5;
     box-sizing: border-box;
 }
@@ -11,23 +11,48 @@ html {
     box-sizing: border-box;
 }
 body {
-    background-color: rgb(246, 248, 97);
+    background-color: rgb(178, 238, 175);
     max-width: 100%;
     margin: 0 auto;
     font-size: 15px;
     line-height: 25px;
     }
-.wrapper {
+/* .wrapper {
     width: 95%;
     margin: 0 auto;
-}
+} */
 
 h1 {
-    margin-top: 0;
+    margin-top: 10px;
+}
+img {
+    max-width: 100%;
 }
 
 /* ----Layout Containers ----*/
-.header-container {
+
+/* ----Navigation Tabs ----*/
+
+.name {
+    font-size: 25px;
+    margin: 0;
+}
+.nav {
+    margin-top: 7px;
+}
+.name a,
+.nav a {
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: black;
+    font-weight: bold;
+    color:black;
+    background: none;
+}
+/* .header-container {
     background: 15px solid #6de46d   
 }
 
@@ -40,51 +65,142 @@ h1 {
 }
 
 .title {
-    color:violet
-}
+    color:rgb(179, 48, 179);
+    font-size: 30px;
+} */
 
-nav ul {
+.nav ul {
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: space-between;
     list-style-type: square;
 }
 
-nav a {
-    display:block;
-    margin-bottom: 8px;
-    padding: 10px 0;
+.nav li {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.nav a:hover,
+.nav a:visited {
+    color:grey;
+}
+
+#page_wrapper {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/* --- Layout Containers ---*/
+
+.main-header {
+    padding: 25px 10px;
+}
+.banner,
+.main-footer {
     text-align: center;
-    text-decoration: violet;
-    font-weight: bold;
-    color:wheat;
-    background: yellowgreen;
 }
 
-nav a:hover,
-nav a:visited {
-    color:thistle;
+.banner {
+    color: black;
+    background: rgb(238, 248, 224);
+    padding: 5px 0;
+    margin-bottom: 20px;
 }
 
-nav a:hover {
-    text-decoration: turquoise italic;
+.main-footer {
+    background-color: rgb(172, 172, 177);
+    padding: 2.5px;
+    margin-top: 25px;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+   }
+
+/* --- Page Elements --- */
+.logo {
+    width: 25%;
+    position: left;  
+    border-radius: 25px;
 }
 
-.main {
-    padding: 25px 0;
+.headline {
+    margin-bottom: 0;
 }
 
-.main article h1 {
+.herbs {
+    align-self: center;
+}
+
+/* .main article h1 {
     font-size:2.5em;
 }
-
+ */
+/* .icon-location {
+    width: 25px;
+    position: center, absolute;
+    top: -10px;
+    left: -10px;
+    z-index: 2.5;
+  }
+  
 .footer-container {
-    text-align: center;
+   
     background:burlywood;
     padding: 15px 0;
-}
+} */
 
 
 /* ----Media Queries---- */
+@media (min-width: 350px) {
+    .main-header,
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        width: 75%;
+        margin: 0 auto;
+        max-width: 1150px;
+    }
+} 
+
+@media only screen and (min-width:720px) {
+    .main-header,
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* 
+.plant-canvas {
+    padding: .75rem 0;
+    margin: 0 -1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+/* }
+
+@media (min-width: 720px) {
+    .plant-canvas {
+        flex-direction: column;
+        align-items: center;
+    }
+} */
+/* 
+.plant-canvas .media {
+    position: relative;
+    display: block;
+    width: 9rem;
+    height: 6.25rem;
+    border-radius: .25rem;
+}
+
 
 @media only screen and (min-width: 450px) {
 
@@ -128,7 +244,7 @@ nav a:hover {
     }
 }
 
-@media only screen and (min-width:1000px) {
+@media only screen and (min-width:1025px) {
     .wrapper {
         width: 990px;
         margin: 0 auto;
@@ -141,11 +257,11 @@ nav a:hover {
     nav a {
         padding: 25px 1%;
     }
-}
+} */
  
 /* ----Clearfix---- */
-.clearfix:before,
+/* .clearfix:before,
 .clearfix:after {
     content: "";
     display: table;
-}
+} */

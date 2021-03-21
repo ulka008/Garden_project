@@ -1,55 +1,141 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Herb Garden</title>
-        <meta name="viewport" content="width-device-width, intial-scale=1"
 
-        <link href="css/styles.css" rel="stylesheet">
-    </head>
-    <body>
-        
-        <div class="header-container">
-            <header class="wrapper clearfix"> 
-                <h1 class="title">Herb Garden</h1>
-                <nav>
-                    <ul class="main-nav">
-                        <li><a href="#">Herbs</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Supplies</a></li>
-                        <li><a href="#">Where to Buy</a></li>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href="css/media.css" rel="stylesheet">
+    <!-- <link href="css/styles.css" rel="stylesheet">  -->
+
+
+    <title>Herb Garden</title>
+
+</head>
+
+<body>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/directory.js"></script>
+
+    <container >
+        <header class="main-header">
+            <div class="banner">
+                <!-- <img class="logo" src="img/hedgehog.png" alt="hedgehog"> -->
+                Little Herb Garden
+            </div>
+            <!-- <img class="logo" src="img/all_herbs.jpg" alt="plants";> -->
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav nav-pills mb-4" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-index-tab" data-toggle="pill" href="#index" role="tab"
+                                aria-controls="pills-index" aria-selected="true">Index</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-herbs-tab" data-toggle="pill" href="#herbs" role="tab"
+                                aria-controls="pills-herbs" aria-selected="false">Herbs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-supplies-tab" data-toggle="pill" href="#supplies" role="tab"
+                                aria-controls="pills-supplies" aria-selected="false">Supplies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-about-tab" data-toggle="pill" href="#about" role="tab"
+                                aria-controls="pill-about" aria-selected="false">About</a>
+                        </li>
                     </ul>
-                </nav>
-            </header>   
-        </div> 
+                </div>
+            </nav>
+        </header>
 
-         </div class="main-container">
-            <div class="main wrapper clearfix"
-                
-                <article>
-                    <header>
-                        <h1> Welcome to our Herb Garden</h1>
-            <p>Our herb garden was created during the 2020 pandemic, when the world changed and the children needed to be kept busy.</p>
-            <p>We love to cook, so we decided to create an herb garden. </p>
-            <P>The hardest part was to choose the herbs we want to plant. Since we had limited space, we decided to go with the ones we love and use the most.</P>
-                    </header>
-                    <section>
-                        <h2>Supplies</h2>
-                        <p>Supplies needed are easily found around the house or bought in the stores.</p>
-                            <p>Here are just some of the examples of the containers we used:</p>
-                                <p>A plastic container from sour cream.</p>
-                                <p>A plastic container from yougurt.</p>
-                                <p>A cut milk jug.</p>
-                                <p>A clear plastic container from ready-to-eat salad.</p>
-                        </p>
-                    </section>
-                    </div>            
-        </div>
+
+        <main>
+            <div class="pages tab-content" id="pills-tabContent">
+                <article class="tab-pane fade show active" id="index" role="tabpanel" aria-labelledby="pills-index-tab">
+                    <h1>Welcome to our Herb Garden</h1>
+                    <p>Our herb garden was created during the 2020 pandemic, when the world changed and the children
+                        needed
+                        to be kept busy.</p>
+                    <p>We love to cook, so we decided to create a small herb garden. </p>
+                    <p>The hardest part was to choose the herbs we want to plant. Since we had limited space, we decided
+                        to
+                        go with the ones we love and use the most.</p>
+
+                    <img class="icon location" src="img/herbs.jpg" alt="herbs">
+
+                </article>
+                <article class="tab-pane fade" id="herbs" role="tabpanel" aria-labelledby="pills-herbs-tab">
+                    <h2>Herbs</h2>                   
+                    <div id='herbsList'></div>
+                    <div class="zoom"></div>
+                </article>
+                <article class="tab-pane fade" id="supplies" role="tabpanel" aria-labelledby="pills-supplies-tab">
+                    <h2>Supplies</h2>
+                    <p>Supplies needed are easily found around the house or bought in the stores.</p>
+                    <p>Here are just some of the examples of the containers we used:</p>
+                    <p>A plastic container from sour cream.</p>
+                    <p>A plastic container from yougurt.</p>
+                    <p>A cut milk jug.</p>
+                    <p>A clear plastic container from ready-to-eat salad.</p>
+                </article>
+                <article class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="pills-about-tab">
+                    <h2>About</h2>
+                </article>
+            </div>         
+        </main>
+
         <footer class="main-footer">
             <span>&copy;2020-2021 Fun Herb Garden Project</span>
-        
-        </article>
         </footer>
+    </container>
+
+
+    <div class="modal fade" id="modalImageBox" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="zoomInImage"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
-    </body>
+    </div>
+
+
+
+
+    <!-- </div> -->
+
+</body>
+
 </html>

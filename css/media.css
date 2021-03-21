@@ -1,0 +1,84 @@
+.plant-canvas {
+    padding: .75rem 0;
+    margin: 0 -1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    display: block;
+    width: 9rem;
+    height: 10.25rem;
+    border-radius: .25rem;
+}
+
+@media (min-width: 736px) {
+    .plant-canvas {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.plant-canvas img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.plant-canvas .zoom-in {
+    width: 45rem;
+    height: 51.25rem;
+}
+
+.plant-canvas .zoom-in .plant-name {
+    display: none;
+}
+
+.zoom {
+  padding: 50px;
+  background-color: green;
+  transition: transform .2s; /* Animation */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom)*/
+}
+
+
+.banner {
+    justify-content: center;
+    background: #42c482;
+}
+
+.navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 10px !important;
+}
+
+.nav-pills .nav-link {    
+    width: 10rem !important;
+}
+
+
+/* 
+@media (min-width: 350px) {
+    .main-header,
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        width: 75%;
+        margin: 0 auto;
+        max-width: 1150px;
+    }
+} 
+
+@media only screen and (min-width:720px) {
+    .main-header,
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+} */

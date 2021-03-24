@@ -61,6 +61,13 @@
     width: 10rem !important;
 }
 
+.imageSize img {
+    width: 300px;
+    height: 400px;
+    align-items: center;
+}
+
+
 
 /* 
 @media (min-width: 350px) {

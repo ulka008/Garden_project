@@ -1,9 +1,56 @@
+
+.banner {
+    text-align: center;
+    padding: 2.5px;
+    bottom:10px;
+    height:30px;
+    width:100%;
+  }
+  
+.main-footer {
+    background-color: rgb(101, 191, 146);
+    padding: 2.5px;
+    margin-top: 25px;
+    position:fixed;
+    text-align: center;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+   }
+
+html {
+    color: black;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+}
+
+body {
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+
+h1 {
+    margin-top: 10px;
+}
+
+h2 {
+
+    margin-top: 10px;
+}
+
+.iconHerbs {
+    image-orientation: center;
+}
+
 .plant-canvas {
-    padding: .75rem 0;
+    padding: 0.5rem 0.5rem;
     margin: 0 -1rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
     display: block;
     width: 9rem;
     height: 10.25rem;
@@ -35,7 +82,7 @@
 
 .zoom {
   padding: 50px;
-  background-color: green;
+  background-color: none;
   transition: transform .2s; /* Animation */
   width: 200px;
   height: 200px;
@@ -59,6 +106,15 @@
 
 .nav-pills .nav-link {    
     width: 10rem !important;
+}
+
+#herbsList {
+    padding: 10px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .imageSize img {

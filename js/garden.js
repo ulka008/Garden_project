@@ -60,3 +60,35 @@ const plants = [
         photo: 'img/thyme.jpg'
     }
 ];
+
+{/* <table>
+            <thead>
+                <tr>
+                <th scope="col">${plant.name}</th>
+                </tr>
+            </thead>
+    
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>${plant.latin}</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>${plant.germination}</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>
+                        <img src="${plant.photo}" data-toggle='modal' data-target='#modalImageBox' data-plant-name='${plant.name}'> 
+                    </td>
+                </tr>
+            </tbody>
+        </table> */}
+        
+         // <div id='${plant.name}' class='clearfix plant-canvas' ">                              
+            //     <div class='plant-name'>${plant.name}</div>
+            //     <div class='plant-type'>${plant.latin}</div>
+            //     <div class='plant-germination'>${plant.germination}</div>                  
+            //     <img src="${plant.photo}" data-toggle='modal' data-target='#modalImageBox' data-plant-name='${plant.name}' "> 
+            // </div>

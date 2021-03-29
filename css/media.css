@@ -5,10 +5,12 @@
     bottom:10px;
     height:30px;
     width:100%;
-  }
+    justify-content: center;
+    background: #42b1c4;
+   }
   
 .main-footer {
-    background-color: rgb(101, 191, 146);
+    background-color: rgb(101, 188, 191);
     padding: 2.5px;
     margin-top: 25px;
     position:fixed;
@@ -16,7 +18,7 @@
     left:0px;
     bottom:0px;
     height:30px;
-    width:100%;
+    width: auto;
    }
 
 html {
@@ -24,6 +26,11 @@ html {
     line-height: 1.5;
     box-sizing: border-box;
 }
+#name{
+
+    align-items: center;
+}
+
 
 .title {
     text-align: center;
@@ -40,12 +47,12 @@ h1 {
 }
 
 h2 {
-
     margin-top: 10px;
 }
 
 .iconHerbs {
     image-orientation: center;
+    width: 100%;
 }
 
 .plant-canvas {
@@ -55,13 +62,6 @@ h2 {
     width: 9rem;
     height: 10.25rem;
     border-radius: .25rem;
-}
-
-@media (min-width: 736px) {
-    .plant-canvas {
-        flex-direction: column;
-        align-items: center;
-    }
 }
 
 .plant-canvas img {
@@ -93,12 +93,6 @@ h2 {
   transform: scale(1.5); /* (150% zoom)*/
 }
 
-
-.banner {
-    justify-content: center;
-    background: #42c482;
-}
-
 .navbar-nav .nav-link {
     padding-right: 0;
     padding-left: 10px !important;
@@ -108,6 +102,8 @@ h2 {
     width: 10rem !important;
 }
 
+
+
 #herbsList {
     padding: 10px;
     margin: 50px auto;
@@ -115,6 +111,7 @@ h2 {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    align-items: stretch;
 }
 
 .imageSize img {
@@ -123,8 +120,22 @@ h2 {
     align-items: center;
 }
 
+.containerHerbs {
+    width: 100%;
+}
 
 
+#herbPhoto{
+    width: 100px;
+    height: 200px;
+    align-items: center;
+}
+
+@media (min-width: 736px) {
+    .plant-canvas {
+        flex-direction: column;
+        align-items: center;
+    }
 /* 
 @media (min-width: 350px) {
     .main-header,
@@ -138,10 +149,10 @@ h2 {
     }
 } 
 
-@media only screen and (min-width:720px) {
+/* @media only screen and (min-width:720px) {
     .main-header,
     .nav {
         flex-direction: row;
         justify-content: space-between;
     }
-} */
+} */}

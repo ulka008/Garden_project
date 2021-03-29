@@ -103,13 +103,30 @@ $(document).ready(function() {
         let plant = plants[i];
         /* <div id='${plant.name}' class='clearfix plant-canvas' onclick="zoomInPlant('${plant.name}')">       */
         html += `
-            <div id='${plant.name}' class='clearfix plant-canvas' ">                              
-                <div class='plant-name'>${plant.name}</div>
-                <div class='plant-type'>${plant.latin}</div>
-                <div class='plant-germination'>${plant.germination}</div>                  
-                <img src="${plant.photo}" data-toggle='modal' data-target='#modalImageBox' data-plant-name='${plant.name}' "> 
-            </div>
-            `;
+        <table>
+            <thead>
+                <tr id='name'>
+                <th scope="col">${plant.name}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Latin Name: </th>
+                    <td>${plant.latin}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Germination</th>
+                    <td>${plant.germination}</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>
+                        <img src="${plant.photo}" data-toggle='modal' data-target='#modalImageBox' data-plant-name='${plant.name}' id = 'herbPhoto'> 
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+                `;
     }
       
     $('#herbsList').html(html);

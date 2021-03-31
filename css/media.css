@@ -14,13 +14,13 @@
     padding: 2.5px;
     margin-top: 25px;
     margin-left: auto;
-    position: fixed;
+    position: inherit;
     text-align: center;
     left: 20px;
     right: 75px;
     bottom: 0px;
     height: 30px;
-    width: auto;
+    width: 100%;
    }
 
 html {

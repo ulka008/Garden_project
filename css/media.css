@@ -109,23 +109,27 @@ h2 {
         flex-direction: column;
         align-items: center;
     }
-/* 
-@media (min-width: 350px) {
+ 
+@media (min-width: 768px) {
     .main-header,
     .nav {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         display: flex;
-        width: 75%;
+        width: 100%;
         margin: 0 auto;
-        max-width: 1150px;
-    }
+        }
 } 
 
-/* @media only screen and (min-width:720px) {
-    .main-header,
+@media only screen and (min-width:992px) {
+    .main-header {
+        flex-direction: column;
+    }
     .nav {
         flex-direction: row;
         justify-content: space-between;
     }
-} */}
+    .navbar {
+        width: 100%;
+    }
+}  

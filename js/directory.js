@@ -47,18 +47,18 @@ var plants = [
         germination: '14-30 days to sprout',
         photo: 'img/rosemary.jpg'
     },
-    // {
-    //     name: 'Sage',
-    //     latin: 'Salvia officinalis',
-    //     germination: '7-21 days to sprout',
-    //     photo: 'img/sage.jpg'
-    // },
-    // {
-    //     name: 'Thyme',
-    //     latin: 'Thymus vulgaris',
-    //     germination: '10-14 days to sprout',
-    //     photo: 'img/thyme.jpg'
-    // }
+    {
+        name: 'Sage',
+        latin: 'Salvia officinalis',
+        germination: '7-21 days to sprout',
+        photo: 'img/sage.jpg'
+    },
+    {
+        name: 'Thyme',
+        latin: 'Thymus vulgaris',
+        germination: '10-14 days to sprout',
+        photo: 'img/thyme.jpg'
+    }
 ];
 
 $(document).ready(function() {

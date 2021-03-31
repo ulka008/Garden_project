@@ -12,9 +12,7 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link href="css/media.css" rel="stylesheet">
-    <!-- <link href="css/styles.css" rel="stylesheet">  -->
-
-
+   
     <title>Herb Garden</title>
 
 </head>
@@ -35,7 +33,6 @@
     <div class="container text-left">
     <header class="main-header">
         <div class="banner">
-            <!-- <img class="logo" src="img/hedgehog.png" alt="hedgehog"> -->
             Little Herb Garden
         </div>
 
@@ -88,6 +85,26 @@
                 <h2>Herbs</h2>
                 <div id="herbsList"></div>
 
+                <div class="modal fade" id="modalImageBox" tabhome="-1" role="dialog" aria-labelledby="modalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalLabel"></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="zoomInImage" class="imageSize"></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
                 <div class="zoom"></div>
             </article>
             <article class="tab-pane fade" id="supplies" role="tabpanel" aria-labelledby="pills-supplies-tab">
@@ -110,13 +127,12 @@
 
             </article>
             <article class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="pills-about-tab">
-                <h2>About</h2>
-                <!-- <p class="containerHerbs"> -->
+                <h2>About</h2>                
                 <p>To learn more about herbs, please click on the links below:</p>
                 <a href="https://en.wikipedia.org/wiki/Herb">Herbs</a><br>
                 <a href="https://www.gardeners.com/how-to/herb-garden/5068.html">Grow</a><br>
                 <a href="https://heeman.ca/garden-guides/10-herb-gardening-mistakes/">Mistakes</a><br>
-                <!-- </p> -->
+              
                 <img class="containerHerbs" src="img/all_herbs.jpg" alt="plants" ;>
             </article>
         </main>
@@ -127,26 +143,7 @@
     </div>
 
 
-    <div class="modal fade" id="modalImageBox" tabhome="-1" role="dialog" aria-labelledby="modalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalLabel"></h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div id="zoomInImage" class="imageSize"></div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
+   
 
 
 

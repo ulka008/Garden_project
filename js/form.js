@@ -1,57 +1,88 @@
-// Fetching HTML Elements in Variables by ID.
-var x = document.getElementById("form_sample");
-var createForm = document.createElement("form"); // Create New Element Form
-createForm.setAttribute("action", ""); // Setting Action Attribute on Form
-createForm.setAttribute("method", "post"); // Setting Method Attribute on Form
-x.appendChild(createForm);
+function validateName() {
 
-var heading = document.createElement("h2"); // Heading of Form
-heading.innerHTML = "Contact Form ";
-createForm.appendChild(heading);
+    var name = document.getElementById('contact-name').value("input");
 
-var line = document.createElement("hr"); // Giving Horizontal Row After Heading
-createForm.appendChild(line);
+    if(name.length == 0) {
 
-var linebreak = document.createElement("br");
-createForm.appendChild(linebreak);
+      producePrompt('Name is required', 'name-error' , 'red')
+      return false;
 
-var nameLabel = document.createElement("label"); // Create Label for Name Field
-nameLabel.innerHTML = "Your Name : "; // Set Field Labels
-createForm.appendChild(nameLabel);
+  }
 
-var inputElement = document.createElement("input"); // Create Input Field for Name
-inputElement.setAttribute("type", "text");
-inputElement.setAttribute("name", "dname");
-createForm.appendChild(inputElement);
+  if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
 
-var linebreak = document.createElement("br");
-createForm.appendChild(linebreak);
+      producePrompt('First name, please.','name-error', 'red');
+      return false;
 
-var emailLabel = document.createElement("label"); // Create Label for E-mail Field
-emailLabel.innerHTML = "Your Email : ";
-createForm.appendChild(emailLabel);
+  }
 
-var emailElement = document.createElement("input"); // Create Input Field for E-mail
-emailElement.setAttribute("type", "text");
-emailElement.setAttribute("name", "email");
-createForm.appendChild(emailElement);
+  producePrompt('Valid', 'name-error', 'green');
+  return true;
 
-var emailbreak = document.createElement("br");
-createForm.appendChild(emailbreak);
+}
 
-var messageLabel = document.createElement("label"); // Append Textarea
-messageLabel.innerHTML = "Your Message : ";
-createForm.appendChild(messageLabel);
+function validateEmail () {
 
-var textAreaElement = document.createElement("textarea");
-textAreaElement.setAttribute("name", "dmessage");
-createForm.appendChild(textAreaElement);
+var email = document.getElementById('contact-email').value("input");
 
-var messagebreak = document.createElement("br");
-createForm.appendChild(messagebreak);
+if(email.length == 0) {
 
-var submitElement = document.createElement("input"); // Append Submit Button
-submitElement.setAttribute("type", "submit");
-submitElement.setAttribute("name", "submit");
-submitElement.setAttribute("value", "Submit");
-createForm.appendChild(submitElement);
+  producePrompt('Email Invalid','email-error', 'red');
+  return false;
+
+}
+
+if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+
+  producePrompt('Email Invalid', 'email-error', 'red');
+  return false;
+
+}
+
+producePrompt('Valid', 'email-error', 'green');
+return true;
+
+}
+
+function validateMessage() {
+var message = document.getElementById('contact-message').value("input");
+var required = 30;
+var left = required - message.length;
+
+if (left > 0) {
+  producePrompt(left + ' more characters required','message-error','red');
+  return false;
+}
+
+producePrompt('Valid', 'message-error', 'green');
+return true;
+
+}
+
+function validateForm() {
+if (!validateName() || !validatePhone() || !validateEmail() || !validateMessage()) {
+  jsShow('submit-error');
+  producePrompt('Please fix errors to submit.', 'submit-error', 'red');
+  setTimeout(function(){jsHide('submit-error');}, 2000);
+  return false;
+}
+else {
+
+}
+}
+
+function jsShow(id) {
+document.getElementById(id).style.display = 'block';
+}
+
+function jsHide(id) {
+document.getElementById(id).style.display = 'none';
+}
+
+
+function producePrompt(message, promptLocation, color) {
+
+document.getElementById(promptLocation).innerHTML = message;
+document.getElementById(promptLocation).style.color = color;
+
+}

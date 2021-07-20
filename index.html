@@ -12,7 +12,7 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link href="css/media.css" rel="stylesheet">
-   
+
     <title>Herb Garden</title>
 
 </head>
@@ -31,137 +31,178 @@
     <script src="js/directory.js"></script>
 
     <div class="container text-left">
-    <header class="main-header">
-        <div class="banner">
-            Little Herb Garden
-        </div>
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav nav-pills mb-5" id="pills-tab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#home" role="tab"
-                            aria-controls="pills-home" aria-selected="true">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="pills-herbs-tab" data-toggle="pill" href="#herbs" role="tab"
-                            aria-controls="pills-herbs" aria-selected="false">Herbs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="pills-supplies-tab" data-toggle="pill" href="#supplies" role="tab"
-                            aria-controls="pills-supplies" aria-selected="false">Supplies</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="pills-about-tab" data-toggle="pill" href="#about" role="tab"
-                            aria-controls="pill-about" aria-selected="false">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#contact" role="tab"
-                            aria-controls="pill-contact" aria-selected="false">Contact Us</a>
-                    </li>
-                </ul>
+        <header class="main-header">
+            <div class="banner">
+                Little Herb Garden
             </div>
-        </nav>
-    </header>
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav nav-pills mb-5" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#home" role="tab"
+                                aria-controls="pills-home" aria-selected="true">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-herbs-tab" data-toggle="pill" href="#herbs" role="tab"
+                                aria-controls="pills-herbs" aria-selected="false">Herbs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-supplies-tab" data-toggle="pill" href="#supplies" role="tab"
+                                aria-controls="pills-supplies" aria-selected="false">Supplies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-about-tab" data-toggle="pill" href="#about" role="tab"
+                                aria-controls="pill-about" aria-selected="false">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#contact" role="tab"
+                                aria-controls="pill-contact" aria-selected="false">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
 
-    <main>
-        <div class="pages tab-content" id="pills-tabContent">
-            <article class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="pills-home-tab">
-                <h1>Welcome to our Herb Garden</h1>
-                <p>Our herb garden was created during the 2020 pandemic, when the world changed and the children
-                    needed
-                    to be kept busy.</p>
-                <p>We love to cook, so we decided to create a small herb garden. </p>
-                <p>The hardest part was to choose the herbs we want to plant. Since we had limited space, we decided
-                    to
-                    go with the ones we love and use the most.</p>
+        <main>
+            <div class="pages tab-content" id="pills-tabContent">
+                <article class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <h1>Welcome to our Herb Garden</h1>
+                    <p>Our herb garden was created during the 2020 pandemic, when the world changed and the children
+                        needed
+                        to be kept busy.</p>
+                    <p>We love to cook, so we decided to create a small herb garden. </p>
+                    <p>The hardest part was to choose the herbs we want to plant. Since we had limited space, we decided
+                        to
+                        go with the ones we love and use the most.</p>
+                    <p>Thanks to lots of watering and sunshine, we are impatiently waiting to harvest our herbs in just a little bit.</p> 
+                    
+                    <h3>Harvest clock</h3>
+<div id="clockdiv">
+	<div><span class="days"></span><div class="smalltext">Days</div></div>
+	<div><span class="hours"></span><div class="smalltext">Hours</div></div>
+	<div><span class="minutes"></span><div class="smalltext">Minutes</div></div>
+	<div><span class="seconds"></span><div class="smalltext">Seconds</div></div>
 
-                <img class="iconHerbs" src="img/herbs.jpg" alt="herbs">
+    <link href="css/countdown.css" rel="stylesheet">
+    <script src="js/countdown.js"></script>
 
-            </article>
-            <article class="tab-pane fade" id="herbs" role="tabpanel" aria-labelledby="pills-herbs-tab">
-                <h2>Herbs</h2>
-                <div id="herbsList"></div>
+</div>
 
-                <div class="modal fade" id="modalImageBox" tabhome="-1" role="dialog" aria-labelledby="modalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalLabel"></h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div id="zoomInImage" class="imageSize"></div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <img class="iconHerbs" src="img/herbs.jpg" alt="herbs">
+
+                </article>
+                <article class="tab-pane fade" id="herbs" role="tabpanel" aria-labelledby="pills-herbs-tab">
+                    <h2>Herbs</h2>
+                    <div id="herbsList"></div>
+
+                    <div class="modal fade" id="modalImageBox" tabhome="-1" role="dialog" aria-labelledby="modalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalLabel"></h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="zoomInImage" class="imageSize"></div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        
-                <div class="zoom"></div>
-            </article>
-            <article class="tab-pane fade" id="supplies" role="tabpanel" aria-labelledby="pills-supplies-tab">
-                <h2>Supplies</h2>
-                <p>Supplies needed are easily found around the house or bought in the stores.</p>
-                <p>Here are just some of the examples of the containers we used:</p>
-                <ul class="flex-container">
-                    <li class="flex-item">A plastic container from sour cream.</li>
-                    <li class="flex-item">A plastic container from yougurt.</li>
-                    <li class="flex-item">A cut milk jug.</li>
-                    <li class="flex-item">A clear plastic container from ready-to-eat salad.</li>
-                    <li class="flex-item">A metal can from canned vegetables or fruits.</li>
-                    <li class="flex-item">A plastic bucket.</li>
-                    <li class="flex-item">A flower pot.</li>
-                </ul>
-                <p>You will also need seeds of your choice and garden soil.</p><br>
-                <p>Saw your seeds, water the soil and put your container in a sunny spot.</p>
-                <p>Don't forget to water your future herbs!</p>
-                <p>Have fun!</p>
 
-            </article>
-            <article class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="pills-about-tab">
-                <h2>About</h2>
-                <p>To learn more about herbs, please click on the links below:</p>
-                <a href="https://en.wikipedia.org/wiki/Herb">Herbs</a><br>
-                <a href="https://www.gardeners.com/how-to/herb-garden/5068.html">Grow</a><br>
-                <a href="https://heeman.ca/garden-guides/10-herb-gardening-mistakes/">Mistakes</a><br>
-              
-                <img class="containerHerbs" src="img/all_herbs.jpg" alt="plants" ;>
-            </article>
+                    <div class="zoom"></div>
+                </article>
+                <article class="tab-pane fade" id="supplies" role="tabpanel" aria-labelledby="pills-supplies-tab">
+                    <h2>Supplies</h2>
+                    <p>Supplies needed are easily found around the house or bought in the stores.</p>
+                    <p>Here are just some of the examples of the containers we used:</p>
+                    <ul class="flex-container">
+                        <li class="flex-item">A plastic container from sour cream.</li>
+                        <li class="flex-item">A plastic container from yougurt.</li>
+                        <li class="flex-item">A cut milk jug.</li>
+                        <li class="flex-item">A clear plastic container from ready-to-eat salad.</li>
+                        <li class="flex-item">A metal can from canned vegetables or fruits.</li>
+                        <li class="flex-item">A plastic bucket.</li>
+                        <li class="flex-item">A flower pot.</li>
+                    </ul>
+                    <p>You will also need seeds of your choice and garden soil.</p><br>
+                    <p>Saw your seeds, water the soil and put your container in a sunny spot.</p>
+                    <p>Don't forget to water your future herbs!</p>
+                    <p>Have fun!</p>
 
-            <article class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                <h2>Contact Us</h2>
-                    <p>If you would like to learn more about our journey in growing herbs, please send us your name, email and a short message in the form provided below.</p> 
-                    
-                    <!-- <link href="css/form.css" rel="stylesheet"> -->
+                </article>
+                <article class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="pills-about-tab">
+                    <h2>About</h2>
+                    <p>To learn more about herbs, please click on the links below:</p>
+                    <a href="https://en.wikipedia.org/wiki/Herb">Herbs</a><br>
+                    <a href="https://www.gardeners.com/how-to/herb-garden/5068.html">Grow</a><br>
+                    <a href="https://heeman.ca/garden-guides/10-herb-gardening-mistakes/">Mistakes</a><br>
+
+                    <img class="containerHerbs" src="img/all_herbs.jpg" alt="plants" ;>
+                </article>
+
+                <article class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <h2>Contact Us</h2>
+                    <p>If you would like to learn more about our journey in growing herbs, please send us your name,
+                        email and a short message in the form provided below.</p>
+
+                    <link href="css/form.css" rel="stylesheet">
                     <script src="js/form.js"></script>
-                    <div id="main">
-                     <div id="form_sample"></div> 
+                    <!-- <div id="main">
+                     <div id="form_sample"></div>  -->
                     <!--  -->
-                    </div>                                   
-                                      
+                    <!-- </div>                                    -->
+
+                    <form>
+
+                        <div class="form_sample">
+                            <label for="contact-name">Name</label>
+                            <input type="text" class="form-control" id="contact-name" name="name"
+                                placeholder="Enter your name.." onkeyup='validateName()'>
+                            <span class='error-message' id='name-error'></span>
+                        </div>
+
+                        <div class="form_sample">
+                            <label for="contact-email">Email address</label>
+                            <input type="email" class="form-control" id="contact-email" name="email"
+                                placeholder="Enter Email" onkeyup='validateEmail()'>
+                            <span class='error-message' id='email-error'></span>
+                        </div>
+
+                        <div class="form_sample">
+                            <label for='contactMessage'>Your Message</label>
+                            <textarea class="form-control" rows="5" id='contact-message' name='message'
+                                placeholder="Enter a brief message" onkeyup='validateMessage()'></textarea>
+                            <span class='error-message' id='message-error'></span>
+                        </div>
+
+                        <button onclick='return validateForm()' class="btn btn-default">Submit</button>
+                        <span class='error-message' id='submit-error'></span>
+                    </form>
+
                     <img class="gravelPlants" src="img/plants.jpg" alt="plants" ;>
-            </article>
+                </article>
         </main>
 
-    <footer class="main-footer">
-        <span>&copy;2020-2021 Fun Herb Garden Project</span>
-    </footer>
+        <footer class="main-footer">
+            <span>&copy;2020-2021 Fun Herb Garden Project</span>
+        </footer>
     </div>
 
 
-   
+
 
 
 

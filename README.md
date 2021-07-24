@@ -5,9 +5,15 @@ index.html: contains jQuery, Popper.js and Bootstrap for my tabs and modal pictu
 
 media.css: contains style for my pages, including sticky footer and media queries.
 
+form.js: contains countdown clock to our harvest.
+
 img folder: contains images used on my site. Images were downloaded from unsplash.com and are free for personal use.
 
-directory.js: contains arrays, a formula to extract information on my plants and display it on my site. It also contains a table that displays herbs.
+directory.js: contains arrays, a formula to extract information on my plants and display it on my site and a fetch request. 
+
+plants.json: contains a table that displays herbs.
+
+server.js: contains API
 
 gardening tips.txt is just an outline for myself with the info on my site.
 

@@ -3,17 +3,19 @@ It includes the most common herbs, their pictures, latin names and germination d
 
 index.html: contains jQuery, Popper.js and Bootstrap for my tabs and modal picture box for plants and images. I also used flex-container for the list on the supplies page.
 
-media.css: contains style for my pages, including sticky footer and media queries.
-
-form.js: contains countdown clock to our harvest.
-
 img folder: contains images used on my site. Images were downloaded from unsplash.com and are free for personal use.
+
+media.css, countdown.css and form.css: contain style for my pages, including sticky footer and media queries.
+
+countdown.js: contains countdown clock to our harvest.
+
+form.js: contains regex for my contact form.
 
 directory.js: contains arrays, a formula to extract information on my plants and display it on my site via zoom-in and a fetch request. 
 
 plants.json: contains a table that displays herbs.
 
-server.js: contains API
+server.js: contains API.
 
 gardening tips.txt is just an outline for myself with the info on my site.
 

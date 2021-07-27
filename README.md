@@ -19,4 +19,4 @@ server.js: contains API.
 
 gardening tips.txt is just an outline for myself with the info on my site.
 
-IMPORTANT: please use http://localhost:8080 in order to fetch API and see plants and information pertaining to them under the Herbs tab.
+IMPORTANT: please use http://localhost:8080 in order to fetch API and see plants and information pertaining to them under the Herbs tab. You would also need to have node.js installed on your computer.

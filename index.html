@@ -164,28 +164,28 @@
                     <form>
 
                         <div class="form_sample">
-                            <label for="contact-name">Name</label>
+                            <label for="contact_name">Name</label>
                             <input type="text" class="form-control" id="contact-name" name="name"
                                 placeholder="Enter your name.." onkeyup='validateName()'>
-                            <span class='error-message' id='name-error'></span>
+                            <span class='error_message' id='name_error'></span>
                         </div>
 
                         <div class="form_sample">
-                            <label for="contact-email">Email address</label>
-                            <input type="email" class="form-control" id="contact-email" name="email"
+                            <label for="contact_email">Email address</label>
+                            <input type="email" class="contact_email" id="contact_email" name="email"
                                 placeholder="Enter Email" onkeyup='validateEmail()'>
-                            <span class='error-message' id='email-error'></span>
+                            <span class='error_message' id='email_error'></span>
                         </div>
 
                         <div class="form_sample">
                             <label for='contactMessage'>Your Message</label>
-                            <textarea class="form-control" rows="5" id='contact-message' name='message'
+                            <textarea class="form_control" rows="5" id='contact_message' name='message'
                                 placeholder="Enter a brief message" onkeyup='validateMessage()'></textarea>
-                            <span class='error-message' id='message-error'></span>
+                            <span class='error_message' id='message_error'></span>
                         </div>
 
                         <button onclick='return validateForm()' class="btn btn-default">Submit</button>
-                        <span class='error-message' id='submit-error'></span>
+                        <span class='error_message' id='submit_error'></span>
                     </form>
 
                     <img class="gravelPlants" src="img/plants.jpg" alt="plants" ;>

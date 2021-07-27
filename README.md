@@ -9,7 +9,7 @@ form.js: contains countdown clock to our harvest.
 
 img folder: contains images used on my site. Images were downloaded from unsplash.com and are free for personal use.
 
-directory.js: contains arrays, a formula to extract information on my plants and display it on my site and a fetch request. 
+directory.js: contains arrays, a formula to extract information on my plants and display it on my site via zoom-in and a fetch request. 
 
 plants.json: contains a table that displays herbs.
 
@@ -17,5 +17,4 @@ server.js: contains API
 
 gardening tips.txt is just an outline for myself with the info on my site.
 
-IMPORTANT: please use http://localhost:8080/ to see the plants and get more information on them.
-
+IMPORTANT: please use http://localhost:8080 in order to fetch API and see plants and information pertaining to them under the Herbs tab.

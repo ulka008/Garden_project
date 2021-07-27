@@ -134,7 +134,7 @@ h2 {
     }
 }  
 
-@import "http://fonts.googleapis.com/css?family=Ubuntu";
+/* @import "http://fonts.googleapis.com/css?family=Ubuntu";
 div#main {
 width: 850px;
 height: 700px;
@@ -192,6 +192,11 @@ cursor: pointer;
 /* -------------------------------------
 CSS for Sidebar (optional)
 ---------------------------------------- */
-div#fugo {
+/* div#fugo {
 float: right
+} */ */
+
+.gravelPlants {
+    image-orientation: center;
+    width: 100%;
 }

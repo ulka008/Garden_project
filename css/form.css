@@ -1,21 +1,15 @@
 @import "http://fonts.googleapis.com/css?family=Ubuntu";
-/* div#main {
-width: 850px;
-height: 700px;
-margin: 0 auto;
-font-family: 'Ubuntu', sans-serif
-} */
 
 #form_sample {
-text-align: center;
-border: 1px solid #ccc;
-width: 300px;
-padding: 0 50px 15px;
-margin-top: 20px;
-box-shadow: 0 0 15px;
-border-radius: 6px;
-float:left
-}
+    text-align: center;
+    border: 1px solid #ccc;
+    width: 300px;
+    padding: 0 50px 15px;
+    margin-top: 20px;
+    box-shadow: 0 0 15px;
+    border-radius: 6px;
+    float:left;
+ }
 
 #contact_name {
     width: 100%;
@@ -23,36 +17,35 @@ float:left
     height: 10px;
     margin-bottom: 25px;
     padding: 10px;
-    border: 3px solid rgb(37, 141, 37)
-    }
+    border: 3px solid rgb(37, 141, 37);
+}
 
 .contact_email {
-width: 100%;
-margin-top: 10px;
-height: 35px;
-margin-bottom: 25px;
-padding: 10px;
-border: 3px solid rgb(37, 141, 37)
+    width: 100%;
+    margin-top: 10px;
+    height: 35px;
+    margin-bottom: 25px;
+    padding: 10px;
+    border: 3px solid rgb(37, 141, 37);
 }
 
 .form_control {
-width: 100%;
-border: 3px solid rgb(37, 141, 37);
-padding: 10px;
-margin-bottom: 25px;
-margin-top: 10px;
-height: 100px;
-resize: none
+    width: 100%;
+    border: 3px solid rgb(37, 141, 37);
+    padding: 10px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    height: 100px;
+    resize: none;
 }
 
 .contact_message {
-width: 100%;
-padding: 10px 45px;
-background-color: rgb(37, 141, 37);
-border: none;
-color: #fff;
-font-size: 18px;
-font-weight: 700;
-cursor: pointer;
-/* font-family: sans-serif */
+    width: 100%;
+    padding: 10px 45px;
+    background-color: rgb(37, 141, 37);
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
 }

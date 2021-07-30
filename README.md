@@ -20,3 +20,16 @@ server.js: contains API.
 gardening tips.txt is just an outline for myself with the info on my site.
 
 IMPORTANT: please use http://localhost:8080 in order to fetch API and see plants and information pertaining to them under the Herbs tab. You would also need to have node.js installed on your computer.
+
+You would ned to run node server.js to retrieve API in plants.json.
+
+New features added: regex in contact form, API in plants.json and server.js,  API fetch request in directory.js and harvest countdown clock.
+
+The following requirements were met:
+
+* Implement a regular expression (regex) to ensure a field either a phone number or an email address is always stored and displayed in the same format
+* Read and parse an external file (such as JSON or CSV) into your application and display some data from that in your app
+* Retrieve data from an external API and display data in your app (such as with fetch() or with AJAX)
+* Calculate and display data based on an external factor (ex: get the current date, and display how many days remaining until some event)
+
+
